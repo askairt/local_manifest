@@ -1,26 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="selene"
-           fetch="https://github.com/selene-devs"
-           revision="lineage-20"/>
-
   <remote  name="lineage"
            fetch="https://github.com/lineageos"
            revision="lineage-20"/>
 
  <!-- Device Trees -->
-  <project path="device/xiaomi/selene" name="android_device_xiaomi_selene" remote="selene"/>
+  <project path="device/xiaomi/selene" name="xeunBin/android_device_xiaomi_selene" remote="github" revision="stable"/>
 
  <!-- Kernel -->
-  <project path="kernel/xiaomi/selene" name="android_kernel_xiaomi_selene" remote="selene"/>
+  <project path="kernel/xiaomi/selene" name="xeunBin/Yukina_Selene" remote="github" revision="yukina-release"/>
 
  <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/selene" name="android_vendor_xiaomi_selene" remote="selene"/>
+  <project path="vendor/xiaomi/selene" name="xeunBin/android_vendor_xiaomi_selene" remote="github"/>
   
  <!-- Extras -->
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="lineage" revision="lineage-20"/>
-  <project path="hardware/xiaomi" name="PixelExperience/hardware_xiaomi" remote="github" revision="thirteen"/>
   <project path="hardware/mediatek" name="android_hardware_mediatek" remote="lineage" revision="lineage-20"/>
   <project path="packages/apps/RevampedFMRadio" name="begonia-dev/android_packages_apps_RevampedFMRadio" remote="github" revision="13.0"/>
 
